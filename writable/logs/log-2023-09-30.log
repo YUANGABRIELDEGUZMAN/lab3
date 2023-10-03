@@ -1,0 +1,16 @@
+CRITICAL - 2023-09-30 18:42:34 --> Undefined variable $products
+in APPPATH\Views\inc\cute.php on line 86.
+ 1 APPPATH\Views\inc\cute.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $products', 'C:\\laragon\\www\\Karlcommers\\app\\Views\\inc\\cute.php', 86)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Karlcommers\\app\\Views\\inc\\cute.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('inc/cute', [], true)
+ 5 APPPATH\Views\jhome.php(5): view('inc/cute')
+ 6 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\Karlcommers\\app\\Views\\jhome.php')
+ 7 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('jhome', [], true)
+ 9 APPPATH\Controllers\ProductController.php(33): view('jhome', [...])
+10 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\ProductController->home()
+11 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+12 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\Karlcommers\\public\\index.php')
